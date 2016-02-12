@@ -1,0 +1,73 @@
+	/* сбросим все отступы для всех элементов */
+	* {
+    margin:0;
+    padding:0;
+	}	
+	body{
+		background-color: #eeeeee;
+	}
+
+	.page_bg{
+		margin: 0 auto;
+		margin-top: 5px;
+		text-align: center;
+		width: 512px;
+		height: 743px;
+		background-color: #ffffff;
+	}
+
+	.header{
+		padding-top: 50px;
+		text-align: center;
+		font-family: times;	
+		font-size: 24px; 
+		font-weight: bold;
+	}
+
+	.foto{
+		margin: 0px 0px 0px 0px; 
+		padding-top: 20px;		
+		text-align: center;
+	}
+
+	.college{		
+		padding-top: 6px;
+		padding-left: 60px;
+		text-align: left;
+		font-family: times;	
+		font-size: 18px;
+	}
+
+	.hr_line{
+		padding: 16px 50px 24px 50px;
+		/* padding-top: 16px;
+		padding-bottom: 24px;
+		padding-left: 50px;
+		padding-right: 50px; */
+	}
+
+	.skill{
+		padding-top: 0px;
+		padding-left: 60px;
+		text-align: left;
+		font-family: times;	
+		font-size: 18px;
+	}
+
+	.skill_list{
+		padding-top: 28px;
+		padding-left: 85px;
+		text-align: left;
+		font-family: times;
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	.contact, .footer{
+		padding-top: 0px;
+		padding-left: 60px;
+		text-align: left;
+		font-family: times;	
+		font-size: 18px;
+		line-height: 25px;
+	}
