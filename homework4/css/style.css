@@ -1,0 +1,298 @@
+
+	/* HEADER */
+
+	body {
+		background-color: #0e84a8;
+		background-image: url("../img/background.jpg"); /*Путь к фоновому изображению */
+	}
+	.wrapper{
+		margin: 0 auto;
+		/*margin-top: 0px; */
+		width: 1000px;
+		height: 988px;
+		background-color: #ffffff;
+
+		-webkit-box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.63);
+		-moz-box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.63);
+		box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.63);
+	}
+
+	.logo {
+		margin: 0px; 
+		padding-top: 11px;
+		padding-left: 28px;
+  		width: 283px;
+  		height: 164px;
+	}
+	.logotxt{
+		position: relative;
+		margin-top: -68px;
+		margin-left: 99px;
+		color: #128aa7;
+		font-size: 12px;
+		font-family: "Tahoma", sans-serif;
+	}
+
+	.contact-head{
+		position: relative;
+		margin-top: -112px;
+		margin-left: 843px;
+		color: #128aa7;
+		font-size: 12.3px;
+		font-family: "Tahoma", sans-serif;
+	}
+
+	.contact-phone{
+		position: relative;
+		margin-top: 7px;
+		margin-left: 842px;
+		color: #128aa7;
+		font-size: 12px;
+		line-height: 1.45;
+		font-family: "Tahoma", sans-serif;
+	} 
+
+	.menu-img{ 
+	 	list-style: none; /* прячем маркеры */
+	 	margin-top: 31px; /* отступ для самого меню */
+	 	margin-left: 635px;
+	}
+	
+	.menu-img li{
+		float: left;
+		margin-right: 3px;
+	}
+	.menu-img li a{
+		display: block;
+		text-align: center;
+		padding-top: 44px; /* отступ, что бы текст был вне картинки */
+		color: #128aa7;
+		font-size: 10px;
+		font-family: "Tahoma", sans-serif;
+		background-position: center top; /* выравниваем фон вверх и по центру */
+		background-repeat: no-repeat;
+		width: 53px; /* размеры кртинки*/
+		height: 42px;
+	}
+
+	.menu-img .India a{
+		background-image: url("../img/i_flag.png");
+	}
+	.menu-img .Nepal a{
+		background-image: url("../img/n_flag.png");
+	}
+	.menu-img .Tibet a{
+		background-image: url("../img/t_flag.png");
+	}
+	.menu-img .Butan a{
+		background-image: url("../img/b_flag.png");
+	}
+	.menu-img .Shri-Lanka a{
+		background-image: url("../img/s_flag.png");
+	}
+	.menu-img .Maldive a{
+		background-image: url("../img/m_flag.png");
+	}
+    .menu-img li a:hover {
+    	color: black;
+    }
+
+	.photo{
+		float: left;
+		width: 1000px;
+  		height: 235px;
+		margin-top: -22px;
+		border-top: 1px solid #128aa7;
+		border-bottom: 1px solid #128aa7;
+	}
+
+	.photo-img {
+		margin: 0px; 
+		padding: 0px;
+  		width: 1000px;
+  		height: 235px;
+	}
+
+	/*центрально меню*/
+	.slidebar{
+		float:left;
+		position:relative;
+		height: 28px;
+		width: 953px;
+		border-bottom: 1px solid black;
+		background-color: #353535; /*фон меню*/
+		margin-top: 1px; /*отступ самого меню, фон меню*/
+		margin-left: 0px;
+		padding-left: 47px;
+
+		-webkit-box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.63);
+		-moz-box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.63);
+		box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.63);
+
+		z-index: 2; /*приоритет отображениея = макс*/
+	}
+
+	.slidebar li{
+		list-style:none;
+		float:left;
+		position:relative;
+		margin-top: 4px; /*отступ в фоне меню кнопок Главная и т.д.*/
+		margin-right:36px;
+		margin-left: 4px;
+		padding-left: 4px;
+		text-align: left;
+	}
+
+	.slidebar li a{ 
+		color: white;
+		background:#333;
+		text-decoration:none;
+		font-size: 14px;
+		font-family: "Tahoma", sans-serif;
+		line-height: 1.45;
+	}
+
+	.dropdown-tour, .dropdown-services, .dropdown-partners{
+		margin-top: 5px; /*отступ от основного меню*/
+		margin-right: 100px;
+	}
+
+	.slidebar .dropdown{	
+		float:left;
+		position:absolute; 
+		width: 145px; 
+		height: 130px;
+		padding-top: 1px;
+		padding-left: 0px;
+		text-align: left;
+		background-color: #353535;
+		-webkit-box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.63);
+		-moz-box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.63);
+		box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.63);
+	}
+
+	.slidebar li img{
+		margin-left: 10px; /*отступ от текста до треугольника*/
+	}
+
+	.slidebar li a:hover{
+		color:#ffffff;
+		background:#6b0c36;
+		text-decoration:none;
+	}
+
+	/* выпадающее меню */
+	.slidebar ul{
+		list-style:none;
+		position:absolute;
+		left:-9999px; /*Скрываем за экраном*/
+		opacity:0;  /*прозрачность = 1 */
+	}
+	.slidebar ul li{
+		float:none;
+	}
+	.slidebar ul a{
+		white-spa3ce:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+		display:block;
+	}
+
+	.slidebar li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+		left:0; /* возвращаем обратно */
+		opacity:1; /* прозрачность=0 */
+		text-decoration:none;
+	}
+
+	.slidebar li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
+		background:#353535; /*фон выпадающей менюшки, после наведения , остальных пунктов*/
+		color: #787879;
+		text-decoration:none;
+	}
+	.slidebar li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+		text-decoration:none;
+		color: white;
+	}
+	.slidebar li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+		background: #353535; /*цвет фона, когда навели указатель*/
+		color: #96b6f8; /*цвет текста при наведении*/
+		text-decoration:none;
+	}
+
+/*трех колоночная структура*/
+ 	.info{
+		background-color: #edeef0;
+		color: #424c43;
+		float: left;
+		width: 210px;
+		height: 541px;
+		margin-top: 20px;
+		margin-left: 0px;
+		border-right: 1px solid #c7cacf;
+		
+	}
+
+.content{
+	background-color: #ffffff;
+	float: left;
+	width: 578px;
+	height: 541px;
+	margin: 0 auto; /*выровняем контент по центру*/
+	margin-top: 20px;
+	
+	
+}
+
+.news{
+	float: left;
+	background-color: #edeef0;
+	border-left: 1px solid #c7cacf;
+	color: #424c43;
+	width: 210px;
+	height: 541px;
+	margin-top: 20px;
+}
+
+.container{
+	position: absolute;
+	margin-top: 316px;
+	overflow: hidden;
+}
+
+
+.clearfix:after{ /*зачистка границ*/
+	content: '';
+	clear: both;
+	display: block;
+}
+
+
+
+.container h1{
+	padding-top: 6px;
+	padding-left: 0px;
+	text-align: center;
+	font-size: 18px;
+	font-family: "Tahoma", bold;
+	
+
+}
+.container p{
+	padding-top: 4px;
+	padding-left: 16px;
+	font-size: 14px;
+	font-family: "Tahoma", sans-serif;
+	line-height: 1.7;
+}
+
+
+
+
+
+	.footer{ /*Copyright*/
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 2px;
+		font-size: 12px;
+		font-family: "Tahoma", sans-serif;
+		color: #ffffff;
+	}
