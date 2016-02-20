@@ -1,4 +1,314 @@
+
+html{
+	
+	height: 100%;
+}
+
 body {
-		background-color: #0e84a8;
+		height: 100%;
+		background-color: white;
 		background-image: url("../img/background.jpg"); /*Путь к фоновому изображению */
-	}
+		background-position: 0px 36px; /*сместим фон для верхнего меню*/
+		background-repeat: no-repeat; /* Отменяем повторение фона */
+		min-width: 600px; /* Минимальная ширина для включения скрола*/
+		min-height: 700px; /* Минимальная высота для включения скрола*/
+}
+
+@font-face {
+    font-family: 'Helvetica Neue'; /* как будет называтся наш шрифт, нужно исп кавычки*/
+
+    src: url('../fonts/helveticaneue-thin-webfont.eot'); /*путь к файлу*/
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal; /* с момощью этого будут отличатся и подключатся такой шрифт как здесь*/
+    font-style: normal; /**/
+}	
+
+
+.top-menu{
+	/*position: relative;*/
+	height: 36px;
+	width: 100%;
+	background-color: #085596;
+	overflow: hidden;
+}
+
+.menu-list ul li{
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 6px;
+}
+
+.menu-list a{
+	line-height: 35px;
+	padding-top: 10px;
+	padding-bottom: 11px;
+	padding-left: 6px;
+	padding-right: 6px;
+	text-decoration: none;
+	color: #60b5ed;
+	font-size: 14px;
+}
+
+.menu-list{
+	margin-left: 400px;
+	height: 36px;
+	width: 40%;
+	text-align: right;
+	background: url("../img/h-line.png") no-repeat;
+	background-position: right;	
+}
+
+.menu-list li a:hover{
+	color: #ffffff;
+	background-image: linear-gradient(to bottom, #51b1dc, #2e7ac4);
+}
+
+.menu-2{
+	float: right;
+	margin-top: -36px;
+	margin-right: 237px;
+	height: 36px;
+	width: 25%;
+	background-color: red;
+	background: url("../img/flag.png") no-repeat;
+	background-position: 0px, 0px;
+}
+
+.menu-2 div{
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 11px;
+	padding-left: 15px;
+	margin-left: 30px;
+	margin-right: -20px;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+
+.menu-2-b1:hover,
+.menu-2-b2:hover{
+	color: #ffffff;
+	background-image: linear-gradient(to bottom, #4faedb, #2e7ac4);
+	cursor: pointer;
+	
+}
+
+
+
+.menu-2-b1{ /*сделаем справа красивый отступ для первой кнопки*/
+	padding-right: 15px;
+}
+
+.menu-2-b2{ /*сделаем справа красивый отступ для второй кнопки*/
+	padding-right: 25px;
+}
+
+.menu-2-b2 span{ /*добавим это гадское подчеркивание*/
+  text-decoration: underline;
+}
+
+
+/*CONTENT*/
+.wrapper{
+		height: 100%;
+		width: 100%;
+		position: relative;
+}
+/*верхняя часть черного прямоугольника*/
+.box1{
+	position: absolute;
+
+	/*автоцетровка*/
+	top: 50%;
+	margin-top: -306px; /*(62+2+559)/2=306	*/
+	left:50%;
+	margin-left:-279px; /*559/2=279 */
+
+	/* ручная цетровка
+	margin-top: 213px; 
+	margin-left:682px; */
+	/*----------------*/
+	height: 62px;
+	width: 559px;
+	background-color: #0e84a8;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+/*центральная часть черного прямоугольника*/
+.box2{
+	position: absolute;
+	/*автоцетровка*/
+	top: 50%;
+	margin-top: -242px; 
+	left:50%;
+	margin-left:-279px; /*559/2=279 */
+
+	/* 	ручная цетровка
+	margin-top: 277px; 
+	margin-left:682px;
+	---------------- */
+	width: 559px;
+	height: 549px;
+	background-color: #0e84a8;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper-content{
+	position: absolute;
+	/*автоцетровка*/
+	top: 50%;
+	margin-top: -306px; /*(62+2+559)/2=306*/
+	left:50%;
+	margin-left:-279px; /*559/2=279 */
+	/* ручная цетровка
+	margin-top: 213px; 
+	margin-left:682px;
+	---------------- */
+	height: 623px;
+	width: 559px;
+}
+
+.wrapper-content h1{ /*Cadastre-se*/
+	margin-top: 20px;
+	margin-left: 0;
+	padding-left: 0px;
+	text-align: center;
+	font-family: "Helvetica Neue", Tahoma, Arial;
+	font-size: 24px;
+	color: #ffffff;
+}
+
+
+input {
+	display: block;
+ 	background-color: transparent;
+ 	/*выключим бордер*/
+ 	border-top: 1px;
+ 	border-right: 1px;
+ 	border-left: 1px;
+ 	border-color: #484948;
+	width: 275px;
+	height: 33px;
+	margin: 0 auto;
+	text-align: left;
+	font-family: "Helvetica Neue", Tahoma, Arial;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.button_fb{
+	margin-top: 56px;
+	width: 276px;
+	height: 35px;
+	border: 0;	
+	background-image: url("../img/fb.png");
+}
+
+.button_fb:hover{
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 5px 3px rgba(104,155,204,0.81);
+	-moz-box-shadow: 0px 0px 5px 3px rgba(104,155,204,0.81);
+	box-shadow: 0px 0px 5px 3px rgba(104,155,204,0.81);
+}
+.OU{
+	margin-top: 31px;
+	text-align: center;
+	font-size: 14px;
+	color: #999999;
+	background: url("../img/lin_ob.png") no-repeat;
+	background-position: center;
+}
+
+.input-f_name{
+	margin-top: 29px;
+	background-color: black;
+}
+
+.input-l_name{
+	margin-top: 18px;
+	background-color: black;
+}
+.input-email{
+	margin-top: 14px;
+	background-color: black;
+}
+.input-coose_pas{
+	margin-top: 16px;
+	background-color: black;
+}
+.input-confirm_pas{
+	margin-top: 11px;
+	background-color: black;
+}
+    
+.check input{
+	display: inline;
+	width: 30px;
+	height: 14px;
+	text-align: left;
+}
+
+.check {
+	position: absolute;
+	margin-top: 21px;
+	margin-left: 133px;
+	width: 400px;
+	height: 20px;
+	color: #ffffff;
+  	font-family: "Helvetica Neue", Tahoma, Arial;
+	font-size: 14px;
+}
+
+.button{ /*Create my Account*/
+	height: 35px;
+	width: 151px;
+	margin-top: 59px;
+	border: 0;
+	background-image: linear-gradient(to bottom, #4facda, #2e7ac4);
+	border-radius: 3px;
+	text-align: center;
+  	font-family: "Helvetica Neue", Tahoma, Arial;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.txt{
+	margin-top: 14px;
+}
+.txt p{
+  padding: 5px 0;
+  text-align: center;
+  font-size: 11px;
+  font-family: "Helvetica Neue", Tahoma, Arial;
+  color: #cccccc;
+}
+
+/*при наведении на поля ввода моменяем курсор и добавим рамку*/
+.input-f_name:hover,
+.input-l_name:hover,
+.input-email:hover,
+.input-coose_pas:hover,
+.input-confirm_pas:hover,
+.button:hover{
+	cursor: text;
+	-webkit-box-shadow: 0px 0px 5px 3px rgba(104,155,204,0.81);
+	-moz-box-shadow: 0px 0px 5px 3px rgba(104,155,204,0.81);
+	box-shadow: 0px 0px 5px 3px rgba(104,155,204,0.81);
+}
+
+/*при активном фокусе меняем фон и добавляем рамку*/	
+.input-f_name:focus,
+.input-l_name:focus,
+.input-email:focus,
+.input-coose_pas:focus,
+.input-confirm_pas:focus{
+	background-color: #1b5288;
+	-webkit-box-shadow: 0px 0px 5px 3px rgba(104,155,204,0.81);
+	-moz-box-shadow: 0px 0px 5px 3px rgba(104,155,204,0.81);
+	box-shadow: 0px 0px 5px 3px rgba(104,155,204,0.81);
+} 
+
