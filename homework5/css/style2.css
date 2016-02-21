@@ -1,0 +1,44 @@
+body {
+    height: 100%;
+    background-color: #ffffff;
+}
+
+table{
+    margin: 0px auto;
+    border-collapse: collapse;
+    border: 10px solid #ffffff;
+}
+td{
+    border: 9px solid #000;
+}
+
+.col-A {
+    height: 56px;
+}
+.col-B {
+    height: 139px;
+}
+.col-C {
+    height: 143px;
+}
+.col-D {
+    height: 60px;
+}
+.col-E {
+    height: 65px;
+}
+.col-F {
+    height: 40px;
+}
+.col-G {
+    height: 40px;
+}
+.row-b1{
+    width: 45px;
+}
+.row-b2{
+    width: 269px;
+}
+.row-b5{
+    width: 165px;
+}
