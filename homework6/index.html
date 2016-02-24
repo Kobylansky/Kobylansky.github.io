@@ -5,19 +5,11 @@
 	<title>HomeWork 6</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <link href="http://allfont.ru/allfont.css?fonts=lucida-sans-unicode" rel="stylesheet" type="text/css" /> -->
 </head>
 <body>
-
-<!-- Верстка должна быть с пиксельной точностью
-Для разметки нужно использовать новые семантичные теги: header, footer, aside, nav, section, main, figure, figcaption
-Так же не забывайте о новых атрибутах форм, в хедере нужно применить placeholder=""
-Для создания всяческих теней, скругленных уголков и градиентов используем CSS3
-Три формы после баннера можно не верстать, это будет бонусным заданием, для тех кто хочет помучиться. Не обязательно, но рекомендовано к выполнению -->
-
 	<div class="wrapper">
-		
-		<div class="head-menu">
+		<header>
+		<!-- <div class="head-menu"> -->
 			<div class="telefon">
 				<div class="phone_logo">
 				<!-- иконка телефона, верхний правый угол -->
@@ -46,7 +38,9 @@
 				<a href="#"><img src="img/let.png" alt=""></a>
 				</div> <!-- end home-icons -->
 			</div> <!-- end home -->
-		</div> <!-- end head-menu -->
+		<!-- </div> --> <!-- end head-menu -->
+		</header>
+
 		<div class="logo">
 		</div>	<!-- end logo -->
 
@@ -71,15 +65,166 @@
 			</div> <!-- end slidebar-count-summa -->
 		</div> <!-- end slidebar -->
 		<div class="forms-search">
-	
-			
-		</div> <!-- end forms-search -->
+			<div class="forms-search-avto">
+			</div> <!-- end forms-search-avto -->
+			<div class="forms-search-shina">
+			</div> <!-- end forms-search-shina -->
+			<div class="forms-search-disc">
+			</div> <!-- end forms-search-disc -->	
+		</div>  <!-- end forms-search -->
 
+
+		<section>
+				<div class="column_catalogue"> <!-- левая колонка -->
+				<div class="catalogue-product">
+					<img src="img/list_file.png">
+  					<p>КАТАЛОГ ПРОДУКЦИИ:</p>
+				</div>	<!-- end catalogue-product -->
+				<div class="catalogue-shin">
+					<img src="img/list_shina.png">
+  					<p>ШИНЫ</p>
+					<ul class="cat-prod-list1">
+						<li><a href="#">Наименование 1</a></li>
+  						<li><a href="#">Наименование 2</a></li>
+  						<li><a href="#">Наименование 3</a></li>
+  						<li><a href="#">Наименование 4</a></li>
+					</ul>
+				</div>	<!-- end catalogue-shin -->
+				<div class="catalogue-disc">
+					<img src="img/list_shina.png">
+  					<p>ДИСКИ</p>
+					<ul class="cat-prod-list2">
+						<li><a href="#">Наименование 1</a></li>
+  						<li><a href="#">Наименование 2</a></li>
+  						<li><a href="#">Наименование 3</a></li>
+  						<li><a href="#">Наименование 4</a></li>
+					</ul>
+				</div>	<!-- end catalogue-disc -->
+				<div class="catalogue-bolt">
+					<img src="img/list_shina.png">
+  					<p>БОЛТЫ</p>
+					<ul class="cat-prod-list3">
+						<li><a href="#">Наименование 1</a></li>
+  						<li><a href="#">Наименование 2</a></li>
+  						<li><a href="#">Наименование 3</a></li>
+  						<li><a href="#">Наименование 4</a></li>
+					</ul>
+				</div>	<!-- end catalogue-bolt -->
+			</div>	<!-- end column_catalogue -->
+
+			<div class="column_image"> <!-- центральная колонка -->
+  				<div class="pr_shin1">
+  					<a href=""><p>Goodyear</p></a>
+  					<p>Ultra Grip Extreme</p>
+  					<div class="product-img-1"></div> 
+  					<p>90.00 грн.</p>
+  				</div> <!-- end pr_shin1 -->
+  				<div class="pr_shin2">
+  					<a href=""><p>Nokian</p></a>
+  					<p>Hakkapeliitta R</p>
+  					<div class="product-img-2"></div> 
+  					<p>115.00 грн.</p>
+  				</div> <!-- pr_shin2 -->
+  				<div class="pr_shin3">
+  					<a href=""><p>Hankook</p></a>
+  					<p>K 708 155/65 R14</p>
+  					<div class="product-img-3"></div> 
+  					<p>393.00 грн.</p>
+  				</div>	<!-- pr_shin3 -->
+  				<div class="pr_shin4">
+  					<a href=""><p>Goodyear</p></a>
+  					<p>Ultra Grip Extreme</p>
+  					<div class="product-img-1"></div> 
+  					<p>90.00 грн.</p>
+  				</div> <!-- pr_shin4 -->
+  				<div class="pr_shin5">
+  					<a href=""><p>Nokian</p></a>
+  					<p>Hakkapeliitta R</p>
+  					<div class="product-img-2"></div> 
+  					<p>115.00 грн.</p>
+  				</div> <!-- pr_shin5 -->
+  				<div class="pr_shin6">
+  					<a href=""><p>Hankook</p></a>
+  					<p>K 708 155/65 R14</p>
+  					<div class="product-img-3"></div> 
+  					<p>393.00 грн.</p>
+  				</div> <!-- pr_shin6 -->
+  				<div class="pr_shin7">
+  					<a href=""><p>Goodyear</p></a>
+  					<p>Ultra Grip Extreme</p>
+  					<div class="product-img-1"></div> 
+  					<p>90.00 грн.</p>
+  				</div> <!-- pr_shin7 -->
+  				<div class="pr_shin8">
+  					<a href=""><p>Nokian</p></a>
+  					<p>Hakkapeliitta R</p>
+  					<div class="product-img-2"></div> 
+  					<p>115.00 грн.</p>
+  				</div>	<!-- pr_shin8 -->
+  				<div class="pr_shin9">
+  					<a href=""><p>Hankook</p></a>
+  					<p>K 708 155/65 R14</p>
+  					<div class="product-img-3"></div> 
+  					<p>393.00 грн.</p>
+  				</div>	<!-- pr_shin9 -->
+  			</div>	<!-- end column_image -->
+
+			<div class="column_brend"> <!-- правая колонка -->
+				<div class="brend-brend">
+					<img src="img/list_file.png">
+					<p>БРЕНДЫ:</p>
+				</div>	<!-- end brend-brend -->
+
+				<div class="brend-shin">
+					<img src="img/list_shina.png">
+  					<p>ШИНЫ</p>
+  					<div class="brend-shin-check">
+						<form>
+	  						<input type="checkbox" name="name1">Бренд 1
+	  						<input type="checkbox" name="name2">Бренд 2
+	  						<input type="checkbox" name="name3">Бренд 3
+	  					</form>
+	  				</div> <!-- end brend-shin-check -->
+				</div>	<!-- end brend-shin -->
+				<div class="brend-disc">
+					<img src="img/list_shina.png">
+  					<p>ДИСКИ</p>
+  					<div class="brend-disc-check">
+					<form>
+  						<input type="checkbox" name="name4">Бренд 1
+  						<input type="checkbox" name="name5">Бренд 2
+  						<input type="checkbox" name="name6">Бренд 3
+  						<input class="but_sel" type="submit" name="name" value="ВЫБРАТЬ">
+  					</form>
+  					</div> <!-- end brend-disc-check -->
+				</div>	<!-- end brend-disc -->
+			</div> <!-- end column_brend -->
+		</section>
+		
+		<div class="logo-brend">
+			<img class="logo-brend-1" src="img/08.png" alt="">
+			<img class="logo-brend-2" src="img/07.png" alt="">
+			<img class="logo-brend-3" src="img/02.png" alt="">
+			<img class="logo-brend-4" src="img/04.png" alt="">
+			<img class="logo-brend-5" src="img/05.png" alt="">
+			<img class="logo-brend-6" src="img/06.png" alt="">
+			<img class="logo-brend-7" src="img/03.png" alt="">
+			<img class="logo-brend-8" src="img/01.png" alt="">
+		</div>
+	
+	<footer>
+  		<div class="footer-menu">
+  			<ul>
+  				<li><a class="footer-menu-1" href="">О компании</a></li>
+  				<li><a class="footer-menu-2" href="">Доставка</a></li>
+  				<li><a class="footer-menu-3" href="">Статьи</a></li>
+  				<li><a href="">&nbsp;Контакты</a></li>
+  			</ul>
+  		</div>	<!-- end footer-menu -->
+  		<div class="create-site">
+  			<p>Создание сайта &copy; Global Vision</p>
+  		</div>	<!-- end create-site -->
+	</footer>
 	</div> <!-- end wrapper -->
-
-
-
-
-	
 </body>
 </html>
