@@ -1,0 +1,237 @@
+
+/*это не поддерживается в ослике 8*/
+/* rem
+media queries
+hsla()
+:last-child, :nth-child(), :first-of-type, â€¦
+:empty
+:not()
+calc()
+.ttf, .otf, .woff fonts
+multiple backgrounds
+
+rgba()
+background-size
+box-shadow
+opacity
+
+border-radius
+canvas
+
+vw, vh, vmin, vmax
+:checked, :valid, :invalid, :required
+
+transforms (rotate, translate, skew, scale, matrix)
+border-radius
+
+getElementsByClassName
+getComputedStyle
+addEventListener
+geolocation
+canvas
+HTML5 video
+HTML5 audio */
+
+
+article, main, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+	.about{
+		position: relative;
+	}
+	.box{
+		clear: both;
+		position: absolute;
+		top: 277px;
+		left: 480px;
+		width: 285px;
+		height: 200px;
+		z-index: 9999;
+	}
+
+	.wrapper{
+		width: 960px;
+		height: 2307px;
+		height: 2900px;
+	}
+	.hlogo{
+		top:58px;
+		left: 0px;
+	}
+
+	.head-menu{
+		top:76px;
+		left: 327px;
+	}
+
+	/*скроем меню для 320-480*/
+	.head-menu__320-480{
+		position: absolute;
+		left:-9999px; /*Скрываем за экраном*/
+	}
+
+
+	/*гребаные полосы на всю ширину экрана*/
+	.background__slider{ /*полупрозначная черная полоса*/
+		top:280px;
+		left: 0px;
+		/*замена background: rgba(0, 0, 0, 0.2);*/
+		background: url("../img/bg_slider.png");
+	}
+
+	.arrow_left{
+		top:182px;
+		left: -33%;;
+	}
+	.arrow_right{
+		top:182px;
+		right: -34%;
+	}
+	.background__about{
+		top: 848px;
+		left: 0px;
+		/*градиет для блока About сиреневая полоса*/
+		background: url("../img/bg_about.png");
+	}
+
+	.background__blog{
+		top:1188px;
+		left: 0px;		
+	}
+
+	.background__logo{
+		top:1676px;
+		left: 0px;	
+	}
+
+	.background__coment{
+		top:1796px;
+		left: 0px;
+	}
+
+	.background__footer{
+		top:2193px;
+		
+	}
+
+	.text{
+		top: 0px;
+		left: 0px;
+	}
+
+	.text h1{
+		top: 89px;
+		left: 2px;
+	}
+
+	.text h2{
+		top: 108px;
+		left: 2px;
+	}
+
+	.text h3{
+		top: 121px;
+		left: 2px;
+	}
+	.iphone-n-focus{
+		top: 61px;
+		left: 616px;
+		/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";*/
+
+	}
+	.iphone{
+		top: -17px;
+		left:694px;
+	}
+	.but_play{
+		top: 149px;
+		left: 59px;
+	}
+
+	.slide_navi{
+		top: 773px;
+		left: 710px;
+	}
+
+	/*фиолетовый блок*/
+	.box{
+		top: 81px;
+		left: 9px;
+	}
+	.box--centr{
+		left: 349px;
+	}
+	.box--right{
+		left: 686px;
+	}
+
+	/*два блока с чуваком и тремя круглыми изображениями*/
+	.blog__box-left{
+	  	top: 105px;
+		left: 22px;
+	}
+	.blog__box-right{
+	 	top: 136px;
+		left: 509px;
+	}
+	/*слайдер для блога*/
+	.slide_blog{ 
+		top: 401px;
+		left: 195px;
+	}
+	/*логотипы*/
+	.logo{
+		position: relative;
+		width: 100%;
+		height: 118px;
+		top: -179px;
+	}
+	.logoimg{
+		top: 31px;
+		left: 93px;
+	}
+	.logoimg--2{
+		left: 227px;
+	}
+	.logoimg--3{
+		left: 363px;
+	}
+	.logoimg--4{
+		left: 503px;
+	}
+	.logoimg--5{
+		left: 621px;
+	}
+	.logoimg--6{
+		left: 789px;
+	}
+
+	/*Три колонки с текстом КОМЕНТ*/
+	.coment__box1{
+		margin-top: 107px;
+		margin-left: -2px;
+		margin-right: 10px;
+	}
+	.coment__box2{
+		margin-top: 107px;
+		margin-left: 51px;
+		margin-right: 10px;
+	}
+	.coment__box3{
+		margin-top: 108px;
+		margin-left: 50px;
+		margin-right: 0px;
+	}
+	/*меню в футере + текст*/
+	.footer-menu{
+		top:55px;
+		left: 0px;
+	}
+	.footer-text{
+		top: 52px;
+		left: 822px;
+		width: 216px;
+	}
+
+
+

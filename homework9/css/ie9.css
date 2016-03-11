@@ -1,0 +1,4 @@
+.background__about{
+	/*градиет для блока About сиреневая полоса*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#745083, endColorstr=#322539)";	
+}
