@@ -1,12 +1,5 @@
 
-var arr = [1, 2, 3];
-console.log('arr = ', arr);
-arr[arr.length] = 4;
-console.log('arr = ', arr);
-	
-
-
-	/*var defultArrayNames = ['Сеня', 'Петя', 'Сергей', 'Ира', 'Лена'];
+	var defultArrayNames = ['Сеня', 'Петя', 'Сергей', 'Ира', 'Лена'];
 
 	for (var i = 0; i <= 4; i++) {
 		defultArrayNames[i] = prompt('Введити имя в массив:', defultArrayNames[i]);
@@ -22,4 +15,4 @@ console.log('arr = ', arr);
 		if (i == 4) {	
 			alert(curName + ', вас нет в массиве');
 		}
-	}*/
+	}
