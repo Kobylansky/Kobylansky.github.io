@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	position: relative;
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 800px;
+	height: 600px;
+	background-color: white;
+}
+.head1{
+	position: absolute;
+	margin-left: 270px;
+	margin-top: 22px;
+	font-size: 19px;
+	font-family: Arial;
+	font-weight: normal;
+    font-style: normal;
+    color: black;
+}
+
+.question1Txt,
+.question2Txt,
+.question3Txt{
+	position: absolute;
+	margin-left: 96px;
+	margin-top: 87px;
+	font-size: 19px;
+	font-family: Arial;
+	font-weight: normal;
+    font-style: normal;
+    color: black;
+}
+.question2Txt{
+	margin-top: 208px;
+}
+
+.question3Txt{
+	margin-top: 328px;
+}
+
+
+.inputQuestion{
+	margin: 11px; /*отступ от чека до текста*/
+}
+
+.checkbox1Question1,/*группа1*/
+.checkbox1Question2,
+.checkbox1Question3,
+.checkbox2Question1,/*группа2*/
+.checkbox2Question2,
+.checkbox2Question3,
+.checkbox3Question1,/*группа3*/
+.checkbox3Question2,
+.checkbox3Question3{
+	position: absolute;
+	margin-left: 111px;
+	margin-top: 115px;
+	font-size: 17px;
+	font-family: Arial;
+	font-weight: normal;
+    font-style: normal;
+    color: black;
+}
+
+.checkbox1Question2{
+	margin-top: 140px;
+}
+
+.checkbox1Question3{
+	margin-top: 164px;
+}
+
+.checkbox2Question1{
+	margin-top: 235px;
+}
+
+.checkbox2Question2{
+	margin-top: 259px;
+}
+
+.checkbox2Question3{
+	margin-top: 284px;
+}
+
+.checkbox3Question1{
+	margin-top: 355px;
+}
+
+.checkbox3Question2{
+	margin-top: 379px;
+}
+
+.checkbox3Question3{
+	margin-top: 404px;
+}
+
+.btn{
+	position: absolute;
+	margin-left: 300px;
+	margin-top: 500px;
+}
