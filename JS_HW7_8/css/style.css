@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	margin-top: 7px;
+	margin-left: 2px;
+
+}
+
+.menu li{
+	list-style: none;
+	float: left;
+	margin-right: 5px;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 2px;
+	font-family: "Calibri";
+
+
+}
+
+.tab1, 
+.tab2,
+.tab3{
+	display: block;
+	width: 100px;
+	height: 19px;
+	border: 1px solid lightgrey;
+	border-radius: 3px 3px 0px 0px;
+	background-color: lightgrey;
+}
+
+li:hover{
+	border: 1px solid red;//#999999;
+	cursor: pointer;
+} 
+
+
+
+.tabWrapper{
+	position: relative;
+	top:116px;
+	left: 200px;
+	width: 570px;
+	height: 295px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	-webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.52);
+	-moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.52);
+	box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.52);
+}
+
+.tabBackground{
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 564px;
+	height: 29px;
+	border: 1px solid grey;
+	border-radius: 5px;
+    background-image: linear-gradient(#f9f9f9, #b5b5b5);
+}
+
+.tabTxt1, 
+.tabTxt2, 
+.tabTxt3 {
+	position: absolute;
+	top: 54px;
+	left: 18px;
+	width: 540px;
+	height: 195px;
+	font-size: 15px;
+	font-family: "Calibri";
+
+}
+
+.tabTxt2, 
+.tabTxt3{
+	opacity: 0;
+}
+
+.form-box{
+	margin-left:200px;
+	width: 100%;
+	max-width: 500px;
+	color: #444;
+	border: 1px solid #ccc; 
+	margin-top: 200px;
+	padding: 20px 20px 20px 20px;
+	border-radius: 5px;
+	font-size: 14px;
+	-webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.52);
+	-moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.52);
+	box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.52);
+}
+
+input{
+	margin-left: 20px;
+	position: relative;
+}
+
+.firstname-tooltip, 
+.lastname-tooltip,
+.adress-tooltip {
+	position: absolute;
+	line-height: 30px;
+	width: 200px;
+	float: right;
+	margin-top: -25px;
+	margin-left: 270px;
+	font-size: 12px;
+	padding-left: 10px;
+	border-radius: 5px;
+	border: 1px solid #B2B2B2;
+	display: none;
+	-webkit-box-shadow: 4px 4px 20px -6px rgba(0,0,0,0.52);
+	-moz-box-shadow: 4px 4px 20px -6px rgba(0,0,0,0.52);
+	box-shadow: 4px 4px 20px -6px rgba(0,0,0,0.52);
+}
+
+.lastname{
+	margin-left: 22px;
+	margin-top: 20px;
+}
+
+.adress{
+	margin-left: 41px;
+	margin-top: 20px;
+}
+
+.showhelp{
+	margin-top: 20px;
+}
+
+.tooltip1{
+	display: none;
+}
+
+.tooltip-active{
+	display: block;
+}
