@@ -1,0 +1,157 @@
+
+/*Меню*/
+.menu-wrapper{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	top: 10px;
+}
+
+.main-menu {
+    padding: 10px 0;
+    background-color: #1395d8;
+}
+
+.horizontal-menu {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-menu a {
+    display: block;
+    height: 40px;
+    margin: 0 12px;
+    padding: 0 12px;
+    font-family: Verdana, sans-serif;
+    color: white;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.main-menu a:hover {
+    color: yellow;
+}
+
+.horizontal-menu a {
+    font-size: 18px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown > a:after {
+    content: " \25BE"; /*спец значки*/
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    width: 200px;
+    padding: 0 10px;
+    background-color: #7cb9d9;
+    z-index: 1;
+}
+
+.submenu a {
+    font-size: 14px;
+}
+
+.submenu>li {
+    display: block;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.submenu>li:last-child {
+    border-bottom: 0;
+}
+
+.dropdown .dropdown > a:after {
+    content: " \25B8"; /*спец значки*/
+    position: absolute;
+    right: 0;
+}
+
+.dropdown .dropdown > ul {
+    left: 200px;
+    top: 0px;
+}
+
+
+.select-wrapper{
+	width: 130px;
+	height: 200px;
+	position: relative;
+	margin: 0 auto;
+}
+
+ .checkbox-wrapper{
+ 	position: absolute;
+ 	top: 800px;
+ 	left: 100px;
+	width: 130px;
+	height: 100px;
+	
+	margin: 0 auto;
+} 
+
+ 
+
+ /* Чекбокс через jQuery */
+.niceCheck {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url('../img/checkbox-sprite.png');
+	overflow: hidden;
+}
+.niceChecked {
+	background-position: 0 -17px;
+}
+
+.niceCheck input {
+	margin-left: -200px;  /*можно задать побольше чтобы наверняка скрыть поле */
+}
+
+.niceCheckDisabled {
+	background-image: url('../img/checkbox-disabled.png');
+}
+
+
+
+/* Чекбокс через css */
+.check-css[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.check-css+label {
+	cursor: pointer;
+}
+.check-css+label:before {
+	content: " ";
+    position: relative;
+	display: inline-block;
+    top: 3px;
+	width: 17px;
+	height: 17px;
+    margin-right: 5px;
+	background: url(../img/checkbox-sprite.png);
+}
+.check-css[type=checkbox]:checked + label:before {
+    background-position: 0 -17px;
+}
+.check-css[type=checkbox]:disabled + label:before {
+	background: url(../img/checkbox-disabled.png);
+    background-position: 0 -17px;
+    cursor: default;
+}
+
+
