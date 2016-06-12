@@ -1,0 +1,29 @@
+body {
+    position: relative;
+}
+
+.logo{
+    position: relative;
+    width: 272px;
+    height: 92px;
+    margin: 0 auto;
+    top: 300px;
+    
+    background: url(https://www.google.com.ua/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png) 0 0 no-repeat;
+}
+
+.reseachInput, 
+.reseachButton{
+    display: block;
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    top: 330px;
+}
+
+.reseachButton{
+    width: 80px;
+    margin: 0 auto;
+    top: 304px;
+    left: 300px;
+}

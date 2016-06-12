@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home work 15-16 JS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/content.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+
+<!-- 
+7. Создать класс Human, у которого будут свойства обычного человека: имя, возраст, пол, рост, вес. Используя прототипное наследование создать дочерние классы Worker (дописать в них поля места работы, зарплатой, методом "работать") и Student (дописать поля места учебы, стипендией, методом "смотреть сериалы")
+
+8. Создать несколько экземпляров классов Worker и Student, вывести их в консоль. Убедиться что они имеют поля родительского класса Human
+ -->
+
+
+
+    <script type="text/template" id="resultsFull">
+        <div>Результатов: <%=searchInformation.formattedTotalResults%> (<%=searchInformation.formattedSearchTime%> сек.)</div>
+        <ul>
+            <% for(var i = 0; i < items.length; i++) { %>
+            <li class="result-item clearfix">
+                <% if(items[i].pagemap.cse_thumbnail) { %>
+                <img height="70px" src="<%= items[i].pagemap.cse_thumbnail[0].src %>">
+                <% }; %>
+                <div class="text-block">
+                    <a href="<%= items[i].link %>" class="link" target="_blank"><%= items[i].title %></a>
+                    <div class="url"><%= items[i].displayLink %></div>
+                    <div class="brief"><%= items[i].htmlSnippet %></div>
+                </div>
+            </li>
+            <% }; %>
+        </ul>
+    </script>
+
+
+    <div class="wrapperMain">
+        <div class="logo"></div>
+            <form action="" target="_blank" method="get">
+                <input class="reseachInput" type="text" name="" id="" required placeholder="Введите поисковый запрос или URL">
+                <input class="reseachButton" type="submit" value="Поиск">
+            </form>
+    </div>  <!-- end wrapperMain -->
+
+    <div id="results"></div>
+
+
+
+</body>
+</html>
